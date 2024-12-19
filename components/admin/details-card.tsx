@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
 
 interface DetailCardProps {
@@ -33,7 +34,14 @@ export const DetailRow = ({
       <span className="text-sm font-medium text-gray-500 sm:w-1/3">
         {label}
       </span>
-      <span className="text-sm text-gray-900 sm:w-2/3 capitalize">{value || "N/A"}</span>
+      <span
+        className={cn(
+          "text-sm text-gray-900 sm:w-2/3",
+          value?.toString().includes("@") ? "lowercase" : "capitalize"
+        )}
+      >
+        {value || "N/A"}
+      </span>
     </div>
   );
 };
