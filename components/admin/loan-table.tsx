@@ -175,8 +175,9 @@ export default function LoanApplicationsTable() {
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
-      <div className="rounded-md border">
-        <Table>
+
+      <div className="rounded-md border overflow-x-auto w-full max-w-[100vw]">
+        <Table className="w-full table-auto max-w-[100vw]">
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
