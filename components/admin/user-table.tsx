@@ -110,8 +110,9 @@ export const UserTable = ({ data }: { data: User[] }) => {
           </Button>
         </div>
       </div>
-      <div className="overflow-x-auto w-full">
-        <Table className="w-full table-auto">
+      
+      <div className="overflow-x-auto w-full max-w-[100vw]">
+        <Table className="w-full table-auto max-w-[100vw]">
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>

@@ -1,37 +1,34 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Users, DollarSign } from "lucide-react";
+import { Users } from "lucide-react";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-export const StatsCard = () => {
+interface StatsCardProps {
+  stats: {
+    totalUsers: number;
+    newSignUps: number;
+    totalIncrease: string;
+    signupIncrease: string;
+  };
+}
+
+export const StatsCard = ({ stats }: StatsCardProps) => {
   return (
-    <div className="grid gap-4 md:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-6">
+    <div className="grid gap-4 md:gap-6 grid-cols-1 md:grid-cols-2 mb-6">
       {[
         {
           title: "Total Users",
-          value: "1,234",
-          increase: "20.1%",
+          value: stats.totalUsers.toLocaleString(),
+          increase: stats.totalIncrease,
           icon: Users,
         },
         {
-          title: "Active Users",
-          value: "987",
-          increase: "18.2%",
+          title: "New Sign ups",
+          value: stats.newSignUps.toLocaleString(),
+          increase: stats.signupIncrease,
           icon: Users,
-        },
-        {
-          title: "New Signups",
-          value: "89",
-          increase: "4.6%",
-          icon: Users,
-        },
-        {
-          title: "Total Donations",
-          value: "$12,345",
-          increase: "8.3%",
-          icon: DollarSign,
         },
       ].map((card, index) => (
         <motion.div
@@ -50,7 +47,7 @@ export const StatsCard = () => {
             <CardContent>
               <div className="text-2xl font-bold">{card.value}</div>
               <p className="text-xs text-muted-foreground">
-                +{card.increase} from last month
+                +{card.increase}% from last month
               </p>
             </CardContent>
           </Card>

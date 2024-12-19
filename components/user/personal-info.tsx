@@ -96,7 +96,7 @@ export function PersonalInfoSection({
         )}
 
         {/* Conditionally render "Business Name" and "Nature of Business" */}
-        {employmentStatus === "self-employed" && (
+        {employmentStatus === "self_employed" && (
           <>
             <TextInputField
               control={control}
