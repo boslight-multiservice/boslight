@@ -11,7 +11,7 @@ const baseHref = "/dashboard/admin";
 const navItems = [
   { icon: LayoutDashboard, label: "Dashboard", href: baseHref },
   { icon: File, label: "Applications", href: `${baseHref}/applications` },
-  { icon: Users, label: "Users", href: "#" },
+  // { icon: Users, label: "Users", href: "#" },
 ];
 
 export const NavMenu = () => {
