@@ -72,10 +72,10 @@ export function Newsletter() {
             <h2 className="text-2xl md:text-5xl font-bold text-white mb-4">
               Get in Touch With Us
             </h2>
-            <h3 className="text-xl md:text-xl mt-10 text-white ">Phone number: 09066428296</h3>
-            <h3 className="text-xl md:text-xl mt-1 text-white  ">Email: contact@boslightmulti-serviceslimited.com</h3>
-            <h3 className="text-xl md:text-xl mt-1 text-white  ">
-              Location: Aminu Street, opposite former lotto central hospital,
+            <h3 className=" md:text-xl mt-10 text-white "><span className="font-bold">Phone Number:</span> 09066428296</h3>
+            <h3 className=" md:text-xl mt-1 text-white  "><span className="font-bold">Email:</span> contact@boslightmulti-serviceslimited.com</h3>
+            <h3 className=" md:text-xl mt-1 text-white  ">
+             <span className="font-bold">Location:</span>  Aminu Street, opposite former lotto central hospital,
               Lotto busstop Ogun State
             </h3>
             <p className="text-white text-lg mb-8 mt-8">
