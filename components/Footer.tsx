@@ -49,7 +49,7 @@ export function Footer() {
 
           {/* Copyright */}
           <div className="text-sm text-gray-500">
-            © 2023 Boslight. All rights reserved.
+            © 2025 Boslight. All rights reserved.
           </div>
         </div>
       </div>

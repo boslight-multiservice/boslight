@@ -127,7 +127,7 @@ const Home = () => {
       <Faq />
 
       {/* <Testimonal />> */}
-      <section id="features" className="py-24 bg-[#F9F5E8]">
+      <section  className="py-24 bg-[#F9F5E8]">
         {/* <NewDonationCard /> */}
         <div className="container px-4 mx-auto">
           <h2 className="text-5xl font-bold text-center mb-16">

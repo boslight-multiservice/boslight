@@ -64,6 +64,9 @@ export function Header() {
           <Link href="#features" className="text-sm font-medium fontTomorrow">
             Features
           </Link>
+          <Link href="#services" className="text-sm font-medium fontTomorrow">
+            Services
+          </Link>
           <Link href="#faq" className="text-sm font-medium fontTomorrow">
             FAQ‘s
           </Link>

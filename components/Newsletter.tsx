@@ -15,11 +15,17 @@ const cardData = [
     title: "Quick and Easy Loans",
     description: "Apply online in minutes and get a decision fast.",
   },
+  {
+    imageSrc: "/bg8.jpeg",
+    title: "Investment Services",
+    description:
+      "We offer a wide range of investement opportunities accross various industry",
+  },
 ];
 
 export function Newsletter() {
   return (
-    <div className="min-h-screen p-8 md:p-12">
+    <div id="services" className="min-h-screen p-8 md:p-12">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
           Ready to take the next step?
@@ -28,8 +34,12 @@ export function Newsletter() {
           Apply online today and let us help you achieve your financial goals.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-          {cardData.map((card) => (
-            <div className="grid grid-cols-1 md:grid-cols-0 gap-4">
+          {cardData.map((card, index) => (
+            <div
+              className={`grid grid-cols-1 md:grid-cols-0 gap-4 ${
+                index === 2 ? "md:col-span-2 md:flex md:justify-center" : ""
+              }`}
+            >
               <div
                 key={card.title}
                 className="bg-white rounded-3xl p-6 shadow-sm max-h-[500px]"
@@ -62,7 +72,13 @@ export function Newsletter() {
             <h2 className="text-2xl md:text-5xl font-bold text-white mb-4">
               Get in Touch With Us
             </h2>
-            <p className="text-white text-lg mb-8">
+            <h3 className="text-xl md:text-xl mt-10 text-white ">Phone number: 09066428296</h3>
+            <h3 className="text-xl md:text-xl mt-1 text-white  ">Email: contact@boslightmulti-serviceslimited.com</h3>
+            <h3 className="text-xl md:text-xl mt-1 text-white  ">
+              Location: Aminu Street, opposite former lotto central hospital,
+              Lotto busstop Ogun State
+            </h3>
+            <p className="text-white text-lg mb-8 mt-8">
               Stay in the loop with everything you need to know.
             </p>
           </div>
