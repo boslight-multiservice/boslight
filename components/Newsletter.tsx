@@ -2,6 +2,8 @@
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+// import { ComplaintForm } from "./user/complaint-form";
+import { AiFillHome, AiFillPhone, AiFillSignature } from "react-icons/ai";
 
 const cardData = [
   {
@@ -72,16 +74,30 @@ export function Newsletter() {
             <h2 className="text-2xl md:text-5xl font-bold text-white mb-4">
               Get in Touch With Us
             </h2>
-            <h3 className=" md:text-xl mt-10 text-white "><span className="font-bold">Phone Number:</span> 09066428296</h3>
-            <h3 className=" md:text-xl mt-1 text-white  "><span className="font-bold">Email:</span> contact@boslightmulti-serviceslimited.com</h3>
-            <h3 className=" md:text-xl mt-1 text-white  ">
-             <span className="font-bold">Location:</span>  Aminu Street, opposite former lotto central hospital,
-              Lotto busstop Ogun State
+            <h3 className=" md:text-xl mt-10 text-white flex flex-row items-center justify-center ">
+              {" "}
+              <AiFillPhone />{" "}
+              <span className="ml-5 font-bold fontTomorrow">
+                Phone Number:{" "}
+              </span>{" "}
+              09066428296
+            </h3>
+            <h3 className=" md:text-xl mt-1 text-white flex flex-row items-center justify-center ">
+              <AiFillSignature />
+              <span className="ml-5 font-bold fontTomorrow">Email:</span>{" "}
+              contact@boslightmulti-serviceslimited.com
+            </h3>
+            <h3 className=" md:text-xl mt-1 text-white   flex flex-row items-center justify-center" >
+              <AiFillHome />  {" "}
+              <span className="ml´5 font-bold fontTomorrow">Location:</span>{" "}
+              Aminu Street, opposite former lotto central hospital, Lotto
+              busstop Ogun State
             </h3>
             <p className="text-white text-lg mb-8 mt-8">
               Stay in the loop with everything you need to know.
             </p>
           </div>
+          {/* <ComplaintForm/> */}
           <form className="flex gap-4 max-w-xl mx-auto bg-white rounded-full">
             <Input
               type="email"
