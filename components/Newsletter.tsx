@@ -74,24 +74,30 @@ export function Newsletter() {
             <h2 className="text-2xl md:text-5xl font-bold text-white mb-4">
               Get in Touch With Us
             </h2>
-            <h3 className=" md:text-xl mt-10 text-white flex flex-row items-center justify-center ">
+            <h3 className=" md:text-xl mt-10 text-white flex flex-row items-center justify-center fontTomorrow ">
               {" "}
-              <AiFillPhone />{" "}
-              <span className="ml-5 font-bold fontTomorrow">
+              <AiFillPhone className="mr-1 md:mr-0" />{" "}
+              <span className="hidden md:flex ml-5  md:mr-1 font-bold fontTomorrow">
                 Phone Number:{" "}
               </span>{" "}
-              09066428296
+               09066428296
             </h3>
-            <h3 className=" md:text-xl mt-1 text-white flex flex-row items-center justify-center ">
-              <AiFillSignature />
-              <span className="ml-5 font-bold fontTomorrow">Email:</span>{" "}
+            <h3 className=" md:text-xl mt-1 text-white flex flex-row md:items-center md:justify-center md:w-auto w-[500px] fontTomorrow ">
+              <AiFillSignature className="mt-1 md:mt-0 w-[23px] h-[23px]" />
+              <span className="hidden md:flex ml-5  md:mr-1 font-bold fontTomorrow">
+                Email:
+              </span>{" "}
               contact@boslightmulti-serviceslimited.com
             </h3>
-            <h3 className=" md:text-xl mt-1 text-white   flex flex-row items-center justify-center" >
-              <AiFillHome />  {" "}
-              <span className="ml´5 font-bold fontTomorrow">Location:</span>{" "}
-              Aminu Street, opposite former lotto central hospital, Lotto
-              busstop Ogun State
+            <h3 className=" md:text-xl mt-1 text-white   flex flex-row md:items-center md:justify-center">
+              <AiFillHome className="mt-1 md:mt-0 w-[20px] h-[20px]"/>{" "}
+              <span className="hidden md:flex  md:mr-0 font-bold fontTomorrow">
+                Location:
+              </span>{" "}
+              <p className="fontTomorrow text-left w-[400px] md:w-[800px] md:ml-0 ml-1 md:ml-5 mr-[-80px]">
+                Aminu Street, opposite former lotto central hospital, Lotto
+                busstop Ogun State
+              </p>
             </h3>
             <p className="text-white text-lg mb-8 mt-8">
               Stay in the loop with everything you need to know.

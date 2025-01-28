@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
+import { AiFillPhone, AiFillSignature } from "react-icons/ai";
 
 export function Footer() {
   return (
@@ -12,12 +13,22 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="mb-12 flex flex-col items-center justify-center">
           {/* Logo */}
-          <div className="mb-8 flex items-center gap-2">
+          <div className="mb-1 flex items-center gap-2">
             <Logo />
           </div>
 
+          <div className="flex flex-col items-center justify-center">
+            <h3 className=" md:text-xl mt-3 text-black fontTomorrow flex flex-row items-center justify-center ">
+            <AiFillPhone className="mr-3" />{" "}      
+              09066428296
+            </h3>
+            <h3 className=" md:text-xl mt-1 text-black fontTomorrow flex flex-row items-center justify-center ">
+            <AiFillSignature className="mr-3" />{" "}
+              contact@boslightmulti-serviceslimited.com
+            </h3>
+          </div>
           {/* Navigation */}
-          <nav className="mb-8">
+          {/* <nav className="mt´3 mb-8">
             <ul className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-gray-600">
               <li>
                 <Link href="#" className="hover:text-gray-900 fontTomorrow">
@@ -39,16 +50,11 @@ export function Footer() {
                   Contact Us
                 </Link>
               </li>
-              {/* <li>
-                <Link href="#" className="hover:text-gray-900">
-                  Register
-                </Link>
-              </li> */}
             </ul>
-          </nav>
+          </nav> */}
 
           {/* Copyright */}
-          <div className="text-sm text-gray-500">
+          <div className="mt-3 text-sm text-gray-500">
             © 2025 Boslight. All rights reserved.
           </div>
         </div>
