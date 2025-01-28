@@ -1,7 +1,5 @@
 /* eslint-disable react/jsx-key */
 import Image from "next/image";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import { ComplaintForm } from "./user/complaint-form";
 import { AiFillHome, AiFillPhone, AiFillSignature } from "react-icons/ai";
 
