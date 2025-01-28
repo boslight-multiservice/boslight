@@ -94,7 +94,7 @@ export function Newsletter() {
               <span className="hidden md:flex  md:mr-0 font-bold fontTomorrow">
                 Location:
               </span>{" "}
-              <p className="fontTomorrow text-left w-[400px] md:w-[800px] md:ml-0 ml-1 md:ml-5 mr-[-80px]">
+              <p className="fontTomorrow text-left w-[300px] md:w-[800px] md:ml-0 ml-1 md:ml-5 mr-[-80px]">
                 Aminu Street, opposite former lotto central hospital, Lotto
                 busstop Ogun State
               </p>
