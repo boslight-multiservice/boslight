@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-// import { ComplaintForm } from "./user/complaint-form";
+import { ComplaintForm } from "./user/complaint-form";
 import { AiFillHome, AiFillPhone, AiFillSignature } from "react-icons/ai";
 
 const cardData = [
@@ -103,8 +103,8 @@ export function Newsletter() {
               Stay in the loop with everything you need to know.
             </p>
           </div>
-          {/* <ComplaintForm/> */}
-          <form className="flex gap-4 max-w-xl mx-auto bg-white rounded-full">
+          <ComplaintForm/>
+          {/* <form className="flex gap-4 max-w-xl mx-auto bg-white rounded-full">
             <Input
               type="email"
               placeholder="Enter your email"
@@ -113,7 +113,7 @@ export function Newsletter() {
             <Button className="mt-[0.1px] md:w-[200px] w-[85px] bg-blue-500 hover:bg-blue-600 text-white rounded-full py-6 px-8 font-semibold">
               Subscribe
             </Button>
-          </form>
+          </form> */}
         </div>
       </div>
     </div>
