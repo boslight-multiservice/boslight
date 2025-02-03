@@ -1,11 +1,11 @@
-// robots.js or robots.ts
+// robots.ts
 import { NextResponse } from 'next/server';
 
-export async function GET() {
+export const GET = async (): Promise<NextResponse> => {
   return new NextResponse(
     `User-agent: *
     Disallow: 
     Sitemap: https://www.boslightmulti-serviceslimited.com/sitemap.xml`,
     { headers: { 'Content-Type': 'text/plain' } }
   );
-}
+};
