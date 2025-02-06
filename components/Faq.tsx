@@ -9,7 +9,7 @@ export function Faq() {
     {
       question: "How does Boslight work?",
       answer:
-        "Boselight provides finanical services to people in need through a secure and transparent platform. We verify all cases and ensure your services reaches the right person.",
+        "Boslight provides finanical services to people in need through a secure and transparent platform. We verify all cases and ensure your services reaches the right person.",
     },
     {
       question: "What are the eligibility criteria for a loan?",

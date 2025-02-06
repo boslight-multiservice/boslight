@@ -7,8 +7,8 @@ export const Logo = () => {
       <Image
         src="/logo.png"
         alt="Logo"
-        width={100}
-        height={100}
+        width={150}
+        height={150}
         className="object-contain"
       />
     </Link>

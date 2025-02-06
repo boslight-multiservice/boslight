@@ -8,6 +8,7 @@ import { Faq } from "@/components/Faq";
 import { Newsletter } from "@/components/Newsletter";
 import { Footer } from "@/components/Footer";
 import { TestimonalCard } from "@/components/TestimonialCard";
+import { AiFillHome, AiFillPhone, AiFillSignature } from "react-icons/ai";
 
 const Home = () => {
   const donationCards = [
@@ -127,7 +128,7 @@ const Home = () => {
       <Faq />
 
       {/* <Testimonal />> */}
-      <section  className="py-24 bg-[#F9F5E8]">
+      <section className="py-24 bg-[#F9F5E8]">
         {/* <NewDonationCard /> */}
         <div className="container px-4 mx-auto">
           <h2 className="text-5xl font-bold text-center mb-16">
@@ -138,6 +139,57 @@ const Home = () => {
             {testimonials.map((card, index) => (
               <TestimonalCard key={index} {...card} index={index} />
             ))}
+          </div>
+        </div>
+
+        <div className="subContact mt-[100px] p-10  bg-white w-full">
+          <div className="text-left lg:ml-[100px]">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Ready to take the next step?
+            </h1>
+            <p className="text-sm text-gray-600 mb-12">
+              Reach out today and let us help you achieve your financial goals.
+            </p>
+          </div>
+          <div className="flex lg:flex-row flex-col items-start lg:justify-evenly">
+            <div className="flex flex-row items-start lg:mb-0 mb-5 ">
+              <div className="p-5 rounded-10 rounded-md border-[2px] border-blue-500">
+                <AiFillHome
+                  color="blue"
+                  size={100}
+                  className="w-8 h-8 mt-1"
+                />
+              </div>{" "}
+              <div className="flex flex-col ml-2">
+                <p className="font-bold text-2xl">Address</p>
+                <p className="lg:max-w-[400px]">
+                  Aminu Street, opposite former lotto central hospital, Lotto
+                  busstop Ogun State
+                </p>{" "}
+              </div>
+            </div>
+            <div className="flex flex-row items-start lg:mb-0 mb-5">
+              <div className="p-5 rounded-10 rounded-md border-[2px] border-blue-500">
+                <AiFillSignature
+                  color="blue"
+                  size={100}
+                  className="w-8 h-8 mt-1"
+                />
+              </div>{" "}
+              <div className="flex flex-col ml-2">
+                <p className="font-bold text-2xl">Email</p>
+                <p>contact@boslightmulti-serviceslimited.com</p>
+              </div>
+            </div>
+            <div className="flex flex-row items-start ">
+              <div className="p-5 rounded-10 rounded-md border-[2px] border-blue-500">
+                <AiFillPhone color="blue" size={100} className="w-8 h-8 mt-1" />
+              </div>{" "}
+              <div className="flex flex-col ml-2">
+                <p className="font-bold text-2xl">Phone Number</p>
+                <p>+234 906 642 8296</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

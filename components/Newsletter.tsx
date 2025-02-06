@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 import Image from "next/image";
 import { ComplaintForm } from "./user/complaint-form";
-import { AiFillHome, AiFillPhone, AiFillSignature } from "react-icons/ai";
+// import { AiFillHome, AiFillPhone, AiFillSignature } from "react-icons/ai";
 
 const cardData = [
   {
@@ -28,7 +28,7 @@ export function Newsletter() {
     <div id="services" className="min-h-screen p-8 md:p-12">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          Ready to take the next step?
+          Let´s handle your financial needs with speed
         </h1>
         <p className="text-sm text-gray-600 mb-12">
           Apply online today and let us help you achieve your financial goals.
@@ -64,6 +64,7 @@ export function Newsletter() {
             </div>
           ))}
         </div>
+
         <div
           id="contact"
           className="bg-[#E17153] rounded-3xl p-8 md:p-12 text-center"
@@ -72,13 +73,13 @@ export function Newsletter() {
             <h2 className="text-2xl md:text-5xl font-bold text-white mb-4">
               Get in Touch With Us
             </h2>
-            <h3 className=" md:text-xl mt-10 text-white flex flex-row items-center justify-center fontTomorrow ">
+            {/* <h3 className=" md:text-xl mt-10 text-white flex flex-row items-center justify-center fontTomorrow ">
               {" "}
               <AiFillPhone className="mr-1 md:mr-0" />{" "}
               <span className="hidden md:flex ml-5  md:mr-1 font-bold fontTomorrow">
                 Phone Number:{" "}
               </span>{" "}
-               09066428296
+              +234 906 642 8296
             </h3>
             <h3 className=" md:text-xl mt-1 text-white flex flex-row md:items-center md:justify-center md:w-auto w-[500px] fontTomorrow ">
               <AiFillSignature className="mt-1 md:mt-0 w-[23px] h-[23px]" />
@@ -88,20 +89,20 @@ export function Newsletter() {
               contact@boslightmulti-serviceslimited.com
             </h3>
             <h3 className=" md:text-xl mt-1 text-white   flex flex-row md:items-center md:justify-center">
-              <AiFillHome className="mt-1 md:mt-0 w-[20px] h-[20px]"/>{" "}
+              <AiFillHome className="mt-1 md:mt-0 w-[20px] h-[20px]" />{" "}
               <span className="hidden md:flex  md:mr-0 font-bold fontTomorrow">
                 Location:
               </span>{" "}
               <p className="fontTomorrow text-left w-[350px] md:w-[800px] md:ml-0 ml-1 md:ml-5 mr-[-80px]">
                 Aminu Street, opposite former lotto central hospital, Lotto
                 busstop Ogun State
-              </p>
-            </h3>
+              </p> 
+            </h3>*/}
             <p className="text-white text-lg mb-8 mt-8">
               Stay in the loop with everything you need to know.
             </p>
           </div>
-          <ComplaintForm/>
+          <ComplaintForm />
           {/* <form className="flex gap-4 max-w-xl mx-auto bg-white rounded-full">
             <Input
               type="email"

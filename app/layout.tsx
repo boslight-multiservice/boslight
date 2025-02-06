@@ -20,13 +20,14 @@ const rubik = Rubik({
 export const metadata: Metadata = {
   title: "Boslight",
   description: "Loan Application Company",
+  icons: "https://www.boslightmulti-serviceslimited.com/logo.png",
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) { 
   return (
     <ClerkProvider>
       <html lang="en">
